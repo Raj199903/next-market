@@ -1,0 +1,11 @@
+import mongoose from "mongoose"
+
+const connectDB = async() => {
+    try{
+        await mongoose.connect("mongodb+srv://251004_db_user:Raj@205428@cluster0.i6zlt5d.mongodb.net/nextAppDataBase?appName=Cluster0")
+        console.log("Success: Connected to MongoDB")
+    }catch{
+        console.log("Failure: Unconnected to MongoDB")
+    }
+}
+    export default connectDB
